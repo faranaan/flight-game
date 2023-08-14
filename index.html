@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight-Game</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        p{
+            position: absolute;
+            z-index: 10;
+            color: white;
+            left: 10px;
+            top: 10px;
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+        div.canvas{
+            position: relative;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas">
+    <p><span>Score:</span><span id="scoreEl">0</span></p>
+    
+        <canvas></canvas>
+    </div>
+    <div>
+        <p style="width: 110px; left: 5px; top: 15px;">Guide:</p>
+        <p style="width: 110px; left: 5px; top: 32px;">1.A = left</p>
+        <p style="width: 110px; left: 5px; top: 49px;">2.D = right</p>
+        <p style="width: 110px; left: 5px; top: 66px;">3.Space = Shoot</p>
+        <p style="width: 110px; left: 5px; top: 83px;">4.Reset = Replay</p>
+        <p style="width: 110px; left: 5px; top: 100px;">5.5000 = win</p>
+        <p style="width: 110px; left: 5px; top: 117px;">6.P = On music</p>
+    </div>
+    <audio id="backgroundMusic" loop>
+        <source src="./sounds/perang.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="app.js"></script>
+</body>
+</html>
